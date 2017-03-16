@@ -12,6 +12,7 @@ module.exports = (app) => {
   app.get('/contacts', ContactsController.listAll);
   app.get('/contacts/:id', ContactsController.listSingle);
   app.put('/contacts/:id', ContactsController.update);
+  app.delete('/contacts/:id', ContactsController.delete)
 };
 
 // https://glacial-chamber-70166.herokuapp.com/  LIVE SERVER to use with POSTMAN, $http
